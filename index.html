@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silly Alien</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Katelyns Silly Website</h1>
+        <nav>
+            <button id="homeBtn">Home</button>
+            <button id="journalBtn">Journal</button>
+            <button id="settingsBtn">⚙️</button>
+        </nav>
+    </header>
+    <main id="appContent">
+        <section class="welcome-screen">
+            <h2>Welcome!!!</h2>
+            <p>How are you feeling today?</p>
+            <div id="moodPicker">
+                <button class="mood" data-mood="😊">😊</button>
+                <button class="mood" data-mood="😢">😢</button>
+                <button class="mood" data-mood="😡">😡</button>
+                <button class="mood" data-mood="😍">😍</button>
+                <button class="mood" data-mood="😴">😴</button>
+            </div>
+            <input type="hidden" id="moodInput">
+
+            <button id="saveMood">Save</button>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <small>Made with love by yours, Jonathan Waltner :3</small>
+    </footer>
+</body>
+
+
+</html>

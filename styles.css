@@ -1,0 +1,44 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background-image: url("assets/images/body_background.jpg");
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1a0017;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+button {
+    background-color: #aa00ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color:#ff70a6;
+}
+
+input {
+    border: 2px solid #ff99c8;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.selected {
+  transform: scale(1.3);
+}
