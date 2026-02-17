@@ -3,7 +3,6 @@ const appContent = document.getElementById("appContent");
 document.getElementById("journalBtn").addEventListener("click", showJournal);
 document.getElementById("homeBtn").addEventListener("click", showHome);
 
-// ---------- GLOBAL EMOJI CLICK LISTENER ----------
 document.addEventListener("click", e => {
   if (e.target.classList.contains("mood")) {
     document.querySelectorAll(".mood").forEach(b => b.classList.remove("selected"));
@@ -12,7 +11,6 @@ document.addEventListener("click", e => {
   }
 });
 
-// ---------- SAVE MOOD ----------
 function saveMood() {
   const moodInput = document.getElementById("moodInput");
   if (!moodInput) return;
@@ -38,7 +36,6 @@ function saveMood() {
   alert("Mood saved to journal! 😊");
 }
 
-// ---------- JOURNAL PAGE ----------
 function showJournal() {
   const journal = JSON.parse(localStorage.getItem("journal")) || [];
 
@@ -76,7 +73,6 @@ document.addEventListener("keydown", e => {
 });
 
 
-// ---------- HOME PAGE ----------
 function showHome() {
   appContent.innerHTML = `
     <section class="welcome-screen">
@@ -99,5 +95,4 @@ function showHome() {
   document.getElementById("saveMood").addEventListener("click", saveMood);
 }
 
-// ---------- INITIAL LOAD ----------
 document.getElementById("saveMood").addEventListener("click", saveMood);

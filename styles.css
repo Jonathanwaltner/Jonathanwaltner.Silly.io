@@ -1,14 +1,14 @@
+/* Global styles */
 body {
     font-family: 'poppins', sans-serif;
-    background-image: url("assets/images/body_background.jpg");
-    color: #ffffff;
+    background-image: url("assets/images/OIP.jpg");
+    color: #00ff26;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 header {
-    background-color: #1a0017;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -18,11 +18,13 @@ footer {
     bottom: 0;
     left: 0;
 }
+
+/* Buttons */
 button {
-    background-color: #aa00ff;
+    background-color: #11ff00;
     border: none;
     border-radius: 10px;
-    color: white;
+    color: black;
     padding: 0.5rem 1rem;
     margin: 0.3rem;
     cursor: pointer;
@@ -30,15 +32,79 @@ button {
 }
 
 button:hover {
-    background-color:#ff70a6;
+    background-color: #ffffff;
 }
 
+/* Inputs */
 input {
-    border: 2px solid #ff99c8;
+    border: 2px solid #00ff0d;
     border-radius: 8px;
     padding: 0.5rem;
 }
 
 .selected {
-  transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Theme colors */
+:root {
+    --title-green: #00ff66;
+}
+
+/* Main content boxes */
+.box {
+    background: black;
+    color: var(--title-green);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 255, 100, 0.4);
+    text-align: center;
+}
+
+#TITLE {
+    color: var(--title-green);
+}
+
+/* Mood buttons */
+.mood {
+    font-size: 2rem;
+    background: #222;
+    border: 2px solid var(--title-green);
+    color: var(--title-green);
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mood:hover {
+    background: var(--title-green);
+    color: black;
+}
+
+/* Save button */
+#saveMood {
+    background: var(--title-green);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#saveMood:hover {
+    background: #00cc55;
+}
+
+/* Layout wrapper for main + sidebar */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
 }
